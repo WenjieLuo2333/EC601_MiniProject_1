@@ -1,6 +1,6 @@
-# EC601_MiniProject_1
-EC601
-Summary:
+# EC601_MiniProject_1<br/>
+EC601<br/>
+Summary:<br/>
 get_all_tweets(screen_name) in tweetAPIexample.py: grab and download pictures from specified twitter account.<br/>
 get_anno(img_path,out_path) in google-vision.py: get annotation of the pictures and add into pictures.<br/>
 generate_video(i_path,o_path) in google-vision.py: generate a video from a set of pictures.<br/>
