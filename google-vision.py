@@ -65,7 +65,7 @@ def generate_video(i_path,o_path):
 
 def main():
 	get_anno("./imgs/","./labeled_imgs/")
-	generate_video("./labeled_imgs/img%03d.jpg","labeled_videp.avi")
+	generate_video("./labeled_imgs/img%03d.jpg","labeled_video.avi")
 
 if __name__ == '__main__':
 	main()
