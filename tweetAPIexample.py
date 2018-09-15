@@ -9,10 +9,10 @@ import wget
 import urllib
 import os
 #Twitter API credentials
-consumer_key = "woJu1qdq4B"
-consumer_secret = "vKRaZcGg7"
-access_key = "7259322"
-access_secret = "7qVm"
+consumer_key = "woJu1qdq"
+consumer_secret = "vKRaZcGg"
+access_key = "7259322298393"
+access_secret = "7qVmPUFc47oodA"
 
 
 def get_all_tweets(screen_name):
@@ -74,8 +74,8 @@ def get_all_tweets(screen_name):
     print("Done")
     file.close()
 
+
 if __name__ == '__main__':
     #pass in the username of the account you want to download
     get_all_tweets("@Ibra_official")
-    
-
+ 
