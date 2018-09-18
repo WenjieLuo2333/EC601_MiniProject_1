@@ -21,3 +21,6 @@ After getting the annotation, use python lib PIL to add those text into the pict
 <br/>
 FFmpeg:<br/>
 simply install and run generate_video(i_path,o_path)<br/>
+
+All_in_One_API.py<br/>
+import the other python files and just need to run this file
