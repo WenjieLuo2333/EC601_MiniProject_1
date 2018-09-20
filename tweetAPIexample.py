@@ -8,10 +8,10 @@ import wget
 import urllib
 import os
 #Twitter API credentials
-consumer_key = "woJu1qdq4B0xe5D9YJZpZ08Ev"
-consumer_secret = "vKRaZcGg77kvyK0PI4EifYJXaOqtfwGsxqWB1WMyhPU99xfpBh"
-access_key = "725932229839347713-p2AKH6Ek2mhUpDBWYBdq8VIOud0ZMwS"
-access_secret = "7qVmPUFc47oodAxAKHzx9gx9xHEFn2EpCeqnO0rKQZ3Jh"
+consumer_key = "woJu1qdJZpZ08Ev"
+consumer_secret = "vKRaZcGg77kWB1WMyhPU99xfpBh"
+access_key = "72593222IOud0ZMwS"
+access_secret = "7qVmPUFc47oodA2EpCeqnO0rKQZ3Jh"
 
 def get_all_tweets(screen_name,out_put_path):
 
@@ -22,16 +22,20 @@ def get_all_tweets(screen_name,out_put_path):
     #Twitter only allows access to a users most recent 3240 tweets with this method
     
     #authorize twitter, initialize tweepy
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_key, access_secret)
-    api = tweepy.API(auth)
+    try:
+        auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+        auth.set_access_token(access_key, access_secret)
     
-    #initialize a list to hold all the tweepy Tweets
-    alltweets = []    
-    
-    #make initial request for most recent tweets (200 is the maximum allowed count)
-    new_tweets = api.user_timeline(screen_name = screen_name,count=10)
-    
+        api = tweepy.API(auth)
+        
+        #initialize a list to hold all the tweepy Tweets
+        alltweets = []    
+        
+        #make initial request for most recent tweets (200 is the maximum allowed count)
+        new_tweets = api.user_timeline(screen_name = screen_name,count=10)
+    except:
+        print("Cant access to API")
+        
     #save most recent tweets
     alltweets.extend(new_tweets)
     
