@@ -1,5 +1,6 @@
 # EC601_MiniProject_1<br/>
 EC601<br/>
+[Mini_Proj_3_With_Database url here.](https://github.com/WenjieLuo2333/601_mini_proj_3)
 # Summary:<br/>
 get_all_tweets(screen_name) in tweetAPIexample.py: grab and download pictures from specified twitter account.<br/>
 get_anno(img_path,out_path) in google-vision.py: get annotation of the pictures and add into pictures.<br/>
