@@ -35,7 +35,7 @@ def create_table(db,table_name):
 
 
 
-def get_anno(account,img_path,out_path):
+def get_anno(img_path,out_path):
 	ur='root'
 	pas='wj'
 	dab='wj_ec_601'
